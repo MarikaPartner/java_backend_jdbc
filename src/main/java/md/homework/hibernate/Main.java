@@ -7,7 +7,6 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import md.homework.hibernate.entity.CityEntity;
 
-
 public class Main {
     private static final SessionFactory ourSessionFactory;
 
