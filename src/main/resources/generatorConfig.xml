@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <classPathEntry location="C:/Users/Marina/.m2/repository/org/postgresql/postgresql/42.3.4/postgresql-42.3.4.jar"/>
+
+    <context id="DB2Tables" targetRuntime="MyBatis3">
+        <jdbcConnection driverClass="org.postgresql.Driver"
+                        connectionURL="jdbc:postgresql://localhost:5438/postgres"
+                        userId="postgres"
+                        password="postgres">
+        </jdbcConnection>
+
+        <javaModelGenerator targetPackage="md.homework.mybatis.model"
+                            targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="md.homework.mybatis.mapper.xml"
+                         targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="md.homework.mybatis.dao"
+                             targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+        <table tableName="city">
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+        <table tableName="country">
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+        <table tableName="order_status">
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+        <table tableName="product">
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+        <table tableName="sale">
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+        <table tableName="status_name">
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+        <table tableName="store">
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+        <table tableName="users">
+            <property name="useActualColumnNames" value="false"/>
+        </table>
+    </context>
+</generatorConfiguration>
