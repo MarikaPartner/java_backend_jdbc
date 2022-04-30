@@ -2,16 +2,11 @@ package md.homework.hibernate;
 
 import md.homework.hibernate.entity.CountryEntity;
 import org.hibernate.HibernateException;
-import org.hibernate.Metamodel;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.query.Query;
 import md.homework.hibernate.entity.CityEntity;
-import md.homework.hibernate.entity.UsersEntity;
 
-import javax.persistence.metamodel.EntityType;
-import java.util.stream.Collectors;
 
 public class Main {
     private static final SessionFactory ourSessionFactory;
